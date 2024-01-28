@@ -1,10 +1,9 @@
 
-$(document).ready(() => {
-    searchByName("").then(() => {
-        $("#loading").fadeOut(500)
-        $("body").css("overflow", "auto")
-
-    })
+$(function(){
+	$('#loading').fadeOut(1000,function(){
+		$('body').css('overflow', 'auto');
+		console.log('aaaaaaa')
+	})
 })
 
 
