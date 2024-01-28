@@ -63,7 +63,7 @@ function DisplayRecipes(data){
         <div class="col-md-3">
                 <div onclick="DisplayDish('${data[i].idMeal}')" class="dish position-relative overflow-hidden rounded-2 cursor-pointer">
                     <img class="w-100" src='${data[i].strMealThumb}' alt="" >
-                    <div class="dish-layer position-absolute d-flex align-items-center text-black p-2 w-100 h-100">
+                    <div class="dish-layer position-absolute d-flex align-items-center text-center text-black p-2 w-100 h-100">
                         <h3>${data[i].strMeal}</h3>
                     </div>
                 </div>
