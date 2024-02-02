@@ -1,10 +1,10 @@
-
 $(function(){
 	$('#loading').fadeOut(1000,function(){
 		$('body').css('overflow', 'auto');
 		console.log('aaaaaaa')
 	})
 })
+
 
 
 
@@ -54,7 +54,7 @@ GetRecipes();
 
 function DisplayRecipes(data){
 	closeSideNavBar();
-	searchContainer.innerHTML=''
+	
 	Dishes.innerHTML=``
 	let Carton=``
 	console.log(data)
@@ -63,7 +63,7 @@ function DisplayRecipes(data){
         <div class="col-md-3">
                 <div onclick="DisplayDish('${data[i].idMeal}')" class="dish position-relative overflow-hidden rounded-2 cursor-pointer">
                     <img class="w-100" src='${data[i].strMealThumb}' alt="" >
-                    <div class="dish-layer position-absolute d-flex align-items-center text-center text-black p-2 w-100 h-100">
+                    <div class="dish-layer position-absolute d-flex align-items-center text-black p-2 w-100 h-100">
                         <h3>${data[i].strMeal}</h3>
                     </div>
                 </div>
@@ -86,16 +86,15 @@ async function DisplayDish(id){
 
 	
 	let ingredients = ``
-	let i = 0
+	let i = 1
 	while(data[`strIngredient${i}`]){
 		ingredients+=`<li class="alert alert-info mx-2 p-1">${data[`strMeasure${i}`]} ${data[`strIngredient${i}`]}</li>`
+		i++;
+		
 	}
-	console.log(data)
-	console.log(data.strTags)
 	if(data.strTags){
 		var strTag = data.strTags.split(",")
 	}
-	console.log(strTag)
 	if(!strTag) strTag=[]
 	let tags=``
 	for (let i = 0; i < strTag.length; i++) {
