@@ -37,3 +37,6 @@ input::placeholder {
 .inside-loading{
   display: none;
 }
+.input::placeholder{
+  color: black !important;
+}
