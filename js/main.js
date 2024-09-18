@@ -344,40 +344,40 @@ function showContacts() {
 	searchContainer.innerHTML=''
 	Dishes.innerHTML=``
     Dishes.innerHTML = `<div class="contact min-vh-100 d-flex justify-content-center align-items-center">
-    <div class="container w-75 text-center text-black">
+    <div class="container w-75 text-center ">
         <div class="row g-5">
             <div class="col-md-6">
-                <input id="name" onkeyup="Valid()" type="text" class="form-control" placeholder="Enter Your Name">
+                <input id="name" onkeyup="Valid()" type="text" class="form-control input" placeholder="Enter Your Name">
                 <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
                     Special characters and numbers not allowed
                 </div>
             </div>
             <div class="col-md-6">
-                <input id="email" onkeyup="Valid()" type="email" class="form-control " placeholder="Enter Your Email">
+                <input id="email" onkeyup="Valid()" type="email" class="form-control input" placeholder="Enter Your Email">
                 <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
                     Email not valid *exemple@yyy.zzz
                 </div>
             </div>
             <div class="col-md-6">
-                <input id="phone" onkeyup="Valid()" type="text" class="form-control " placeholder="Enter Your Phone">
+                <input id="phone" onkeyup="Valid()" type="text" class="form-control input" placeholder="Enter Your Phone">
                 <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
                     Enter valid Phone Number
                 </div>
             </div>
             <div class="col-md-6">
-                <input id="age" onkeyup="Valid()" type="number" class="form-control " placeholder="Enter Your Age">
+                <input id="age" onkeyup="Valid()" type="number" class="form-control input" placeholder="Enter Your Age">
                 <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
                     Enter valid age
                 </div>
             </div>
             <div class="col-md-6">
-                <input  id="password" onkeyup="Valid()" type="password" class="form-control " placeholder="Enter Your Password">
+                <input  id="password" onkeyup="Valid()" type="password" class="form-control input" placeholder="Enter Your Password">
                 <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
                     Enter valid password *Minimum eight characters, at least one letter and one number:*
                 </div>
             </div>
             <div class="col-md-6">
-                <input  id="repassword" onkeyup="Valid()" type="password" class="form-control " placeholder="Repassword">
+                <input  id="repassword" onkeyup="Valid()" type="password" class="form-control input" placeholder="Repassword">
                 <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
                     Enter valid repassword 
                 </div>
