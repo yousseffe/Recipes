@@ -344,7 +344,7 @@ function showContacts() {
 	searchContainer.innerHTML=''
 	Dishes.innerHTML=``
     Dishes.innerHTML = `<div class="contact min-vh-100 d-flex justify-content-center align-items-center">
-    <div class="container w-75 text-center">
+    <div class="container w-75 text-center text-white">
         <div class="row g-5">
             <div class="col-md-6">
                 <input id="name" onkeyup="Valid()" type="text" class="form-control" placeholder="Enter Your Name">
